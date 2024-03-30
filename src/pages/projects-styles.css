@@ -1,0 +1,39 @@
+.projects-header {
+  background-color: #242225;
+  z-index: 1000;
+}
+.projects-container {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px; /* Adjust the gap between items */
+  background-color: rgba(255, 102, 196, 0.8);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  margin-top: 2%;
+  justify-content: center; /* Center the content horizontally */
+}
+
+/* Style for each individual ProjectComponent */
+.project-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* Center the content vertically */
+  background-color: #d6d6d6;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+.first-project img {
+  margin-right: 10px; /* Adjust the margin right as needed */
+}
+.second-project img {
+  margin-right: 10px; /* Adjust the margin right as needed */
+}
+.third-project img {
+  margin-right: 10px; /* Adjust the margin right as needed */
+}
+.fourth-project img {
+  margin-right: 10px;
+}

@@ -1,0 +1,55 @@
+/* Styling-aboutme.css */
+
+.about-me {
+  margin-top: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  font-size: 2.4rem;
+}
+
+.about-me-title {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-style: italic;
+  color: #3f4d34;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row; /* Change to column for smaller layout */
+  align-items: center; /* Center align content */
+  background-color: rgba(255, 102, 196, 0.8);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  padding: 10px; /* Add padding as needed */
+  color: #3f4d34;
+}
+
+.portrait-image {
+  height: auto;
+  width: 40%; /* Adjust size of the image */
+  max-width: 200px; /* Limit maximum width */
+  border-radius: 10%;
+  margin-bottom: 5px; /* Add margin below image */
+}
+
+.about-me-content p {
+  width: 60%;
+  font-size: 70%; /* Adjust font size */
+  line-height: 1.5;
+  color: #000000;
+  padding: 5%;
+  text-align: center; /* Center align text */
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center; /* Center align icons */
+  margin-top: auto; /* Push the icons to the bottom */
+}
+
+.contact-icons a {
+  margin: 0 10px; /* Add margin between icons */
+}

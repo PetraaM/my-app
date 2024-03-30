@@ -1,0 +1,122 @@
+.App-header {
+  width: 98%;
+  height: 10vh;
+  color: #d6d6d6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(15px + 3vmin);
+  margin: 30 auto;
+  margin-right: 15%;
+  position: sticky;
+  top: 0;
+  background-color: #242225;
+  border-radius: 10px;
+}
+
+.About-header {
+  color: #d6d6d6;
+  text-decoration: none;
+  margin-right: 8%;
+}
+
+.Projects-header {
+  color: #242225;
+  text-decoration: none;
+  margin-right: 8%;
+}
+
+.Cv-header {
+  color: #242225;
+  text-decoration: none;
+  margin-right: 8%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 430px) {
+  .App-logo {
+    height: 24vmin;
+    border-radius: 50%;
+  }
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  animation: slideInIcons 1.5s ease-in-out; /* Add the animation */
+}
+.linkedin-icon {
+  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  color: #d6d6d6;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 1px;
+}
+
+.github-icon {
+  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  color: #d6d6d6;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 1px;
+}
+.email-icon {
+  border-radius: 50%;
+  border-style: solid;
+  margin-top: -0.5%;
+  width: 35px;
+  height: 35px;
+  color: #d6d6d6;
+}
+.linkedin-icon {
+  margin-right: 1rem;
+}
+
+.github-icon {
+  margin-right: 1rem;
+}
+
+/* Keyframes for the icons slide in */
+@keyframes slideInIcons {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Header-link.active {
+  text-decoration: none;
+  margin-right: 7%;
+  color: #ff66c4;
+}
+.Header-link {
+  color: #d6d6d6;
+  text-decoration: none;
+  margin-right: 7%;
+}
+.Header-link-main {
+  color: #d6d6d6;
+  text-decoration: none;
+  margin-right: 35%;
+}
+.Header-link-main.active {
+  text-decoration: none;
+  margin-right: 7%;
+  color: #ff66c4;
+  margin-right: 35%;
+}
