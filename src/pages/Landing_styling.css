@@ -18,66 +18,6 @@
   justify-content: space-between;
 }
 
-.Burger-menu {
-  margin-right: 5%;
-  animation: slideIn 1.5s ease-in-out; /* Add the animation */
-}
-
-@keyframes slideIn {
-  from {
-    margin-left: 100%; /* Slide in from the left */
-  }
-  to {
-    margin-left: 5%; /* Stop at the specified margin */
-  }
-}
-
-.About-header {
-  font-size: xx-large;
-  margin-right: 8%;
-}
-
-.Projects-header {
-  font-size: xx-large;
-  margin-right: 8%;
-}
-
-.Cv-header {
-  font-size: xx-large;
-  margin-right: 8%;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@media (max-width: 430px) {
-  .App-logo {
-    height: 24vmin;
-    border-radius: 50%;
-  }
-}
-
-.App-header {
-  width: 98%;
-  height: 12vh;
-  color: #d6d6d6;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: calc(9px + 3vmin);
-  margin: 30 auto;
-  position: sticky;
-  top: 0;
-  z-index: 101;
-  border-radius: 10px;
-}
-
-/* New styles with the added animation */
-
 .Intro {
   width: 80%;
   height: 72vh;
@@ -95,24 +35,47 @@
 
 .portrait-image {
   width: 45%;
-  min-width: 480px;
-  height: auto;
+  min-width: 450px;
+  /height: auto;
   max-height: 90%;
-  min-height: 280px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
-
   border-radius: 10%;
 }
 .intro-greeting {
   width: 45%;
-  min-width: 480px;
+  min-width: 280px; /* Adjust minimum width as needed */
   height: auto;
   max-height: 90%;
-  min-height: 280px;
+  min-height: 200px; /* Adjust minimum height as needed */
   display: flex;
   flex-direction: column;
+  border-radius: 10%;
 }
+
+/* Media query for smaller screen sizes */
+@media (max-width: 768px) {
+  .portrait-image,
+  .intro-greeting {
+    width: 90%; /* Adjust the width for smaller screens */
+    min-width: 200px; /* Adjust minimum width as needed */
+    max-height: 70%; /* Adjust maximum height as needed */
+    min-height: 150px; /* Adjust minimum height as needed */
+  }
+}
+
+/* Media query for even smaller screen sizes */
+@media (max-width: 480px) {
+  .portrait-image,
+  .intro-greeting {
+    width: 100%; /* Adjust the width for even smaller screens */
+    min-width: 150px; /* Adjust minimum width as needed */
+    max-height: 50%; /* Adjust maximum height as needed */
+    min-height: 100px; /* Adjust minimum height as needed */
+  }
+}
+
 /* Keyframes for the new animation */
 @keyframes fallIn {
   from {
@@ -125,10 +88,10 @@
   }
 }
 
-@media screen and (max-width: 768px) and (max-width: 420px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
   .Intro {
-    height: 50%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     flex-direction: column-reverse; /* Switch to column layout for smaller screens */
   }
 
@@ -143,58 +106,5 @@
     width: 50%;
     max-width: 85%; /* Set maximum width for column layout */
     max-height: 85%;
-  }
-}
-/* Existing keyframes for the logo spin */
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.contact-icons {
-  display: flex;
-  flex-direction: row;
-  margin-top: auto; /* Push the icons to the bottom */
-  animation: slideInIcons 1.5s ease-in-out; /* Add the animation */
-}
-
-.linkedin-icon {
-  margin-right: 1rem;
-  width: 40px;
-  height: 40px;
-  color: #d6d6d6;
-  border-radius: 50%;
-  border-style: solid;
-  padding: 1px;
-}
-
-.github-icon {
-  margin-right: 1rem;
-  width: 40px;
-  height: 40px;
-  color: #d6d6d6;
-  border-radius: 50%;
-  border-style: solid;
-  padding: 1px;
-}
-.email-icon {
-  width: 40px;
-  height: 40px;
-  color: #d6d6d6;
-}
-
-/* Keyframes for the icons slide in */
-@keyframes slideInIcons {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

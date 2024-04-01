@@ -1,15 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { LiaLinkedinIn } from "react-icons/lia";
-import { BiLogoGithub } from "react-icons/bi";
-import { MdOutlineEmail } from "react-icons/md";
 import "./Header-styling.css";
 
 const Header = () => {
   const location = useLocation();
-  const linkedInUrl = "https://www.linkedin.com/in/petra-milicevic-3321b71aa/";
-  const githubUrl = "https://github.com/PetraaM";
-  const emailAddress = "petra.milicevic@hyperisland.se";
 
   return (
     <header className="App-header">
@@ -45,20 +39,6 @@ const Header = () => {
         rel="noopener noreferrer"
       >
         my CV
-      </a>
-      {/* Add links for other routes as needed */}
-      <a href={linkedInUrl} target="_blank" rel="noreferrer">
-        <LiaLinkedinIn className="linkedin-icon" />
-      </a>
-      <a href={githubUrl} target="_blank" rel="noreferrer">
-        <BiLogoGithub className="github-icon" />
-      </a>
-      <a
-        href={`mailto:${emailAddress}`}
-        className="email-icon"
-        title="Send an email"
-      >
-        <MdOutlineEmail />
       </a>
     </header>
   );

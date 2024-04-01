@@ -6,8 +6,8 @@ import { VscGithub } from "react-icons/vsc";
 import { MdAlternateEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Landing_styling.css";
-import header from "../components/Header.jsx";
 import Header from "../components/Header.jsx";
+import Footer from "../components/footer.jsx";
 
 const LandingPage = () => {
   const linkedInUrl = "https://www.linkedin.com/in/petra-milicevic-3321b71aa/";
@@ -31,6 +31,7 @@ const LandingPage = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
