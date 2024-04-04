@@ -2,7 +2,7 @@
   position: sticky;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 8%;
   margin-top: 3%;
 }
