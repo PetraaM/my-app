@@ -32,7 +32,7 @@ const Header = () => {
         projects
       </Link>
       <a
-        href="https://drive.google.com/file/d/1f_P48kEAjHb-dFktHyma60QM1Ay7K420/view?usp=sharing"
+        href="https://drive.google.com/file/d/1MQKfcWoijzh9Zm5ITFnBI6winWSfrxJM/view?usp=sharing"
         type="application/pdf"
         className={`Header-link ${location.pathname === "/cv" ? "active" : ""}`}
         target="_blank"
