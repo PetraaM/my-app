@@ -2,7 +2,7 @@
 import React from "react";
 import AboutMeComponent from "../components/About-me-comp.jsx";
 import "../components/Styling-aboutme.css";
-import { CiLinkedin } from "react-icons/ci";
+
 import Header from "../components/Header.jsx";
 
 const AboutMe = () => {

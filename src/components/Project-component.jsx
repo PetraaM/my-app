@@ -1,6 +1,5 @@
 import React from "react";
 import "./Component-styles.css";
-import Header from "./Header.jsx";
 
 const ProjectComponent = ({
   imageSrc,

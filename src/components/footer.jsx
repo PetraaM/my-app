@@ -1,12 +1,11 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+
 import { LiaLinkedinIn } from "react-icons/lia";
 import { BiLogoGithub } from "react-icons/bi";
 import { LiaMailBulkSolid } from "react-icons/lia";
 import "./footer-styling.css";
 
 const Footer = () => {
-  const location = useLocation();
   const linkedInUrl = "https://www.linkedin.com/in/petra-milicevic-3321b71aa/";
   const githubUrl = "https://github.com/PetraaM";
   const emailAddress = "petra.milicevic@hyperisland.se";

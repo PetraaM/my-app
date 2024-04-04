@@ -6,10 +6,6 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/footer.jsx";
 
 const LandingPage = () => {
-  const linkedInUrl = "https://www.linkedin.com/in/petra-milicevic-3321b71aa/";
-  const githubUrl = "https://github.com/PetraaM";
-  const emailAddress = "petra.milicevic@hyperisland.se";
-
   return (
     <div className="App">
       <Header />
