@@ -12,6 +12,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  justify-content: center;
 }
 
 .custom-image {
@@ -25,13 +26,13 @@
   margin-top: 15px;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: #d6d6d6;
 }
 
 .project-link {
   display: block;
   text-decoration: none;
-  color: #222222;
+  color: #d6d6d6;
   font-weight: bold;
 }
 
@@ -39,6 +40,6 @@
   display: block;
 
   text-decoration: none;
-  color: #222222;
+  color: #d6d6d6;
   font-weight: bold;
 }

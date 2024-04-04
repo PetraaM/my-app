@@ -36,12 +36,11 @@
 .portrait-image {
   width: 45%;
   min-width: 450px;
-  /height: auto;
+  height: auto;
   max-height: 90%;
   min-height: 200px;
   display: flex;
   flex-direction: column;
-  border-radius: 10%;
 }
 .intro-greeting {
   width: 45%;
@@ -51,7 +50,6 @@
   min-height: 200px; /* Adjust minimum height as needed */
   display: flex;
   flex-direction: column;
-  border-radius: 10%;
 }
 
 /* Media query for smaller screen sizes */

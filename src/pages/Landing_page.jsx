@@ -1,10 +1,6 @@
 import React from "react";
 import OhHello from "../assets/Oh Hello.png";
 import MainImage from "../assets/Main portrait 2.png";
-import { CiLinkedin } from "react-icons/ci";
-import { VscGithub } from "react-icons/vsc";
-import { MdAlternateEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 import "./Landing_styling.css";
 import Header from "../components/Header.jsx";
 import Footer from "../components/footer.jsx";

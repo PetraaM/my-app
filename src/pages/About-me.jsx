@@ -10,14 +10,12 @@ const AboutMe = () => {
 
   const description = (
     <>
-      WHY YOU SHOULD OFFER ME AN INTERNSHIP?
-      <br />
-      <br />
       I'm Petra, a creative frontend developer with a passion for UI design.
       <br />
       I enjoy bringing ideas to life through code and creating user-friendly
       interfaces. If you need someone equipped with genuine curiosity and hunger
-      to learn more, I am the perfect person for you.
+      to learn more, I am the perfect person for you. I am hard working,
+      motivated and determined.
       <br />
       Skills: HTML, CSS, JavaScript, React, Node.js, Figma, Agile methodology,
       User Interface design, User flows.

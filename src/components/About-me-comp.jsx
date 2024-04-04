@@ -2,9 +2,7 @@
 import React from "react";
 import "./Styling-aboutme.css";
 import PetraCollage from "../assets/Petra-collage.png";
-import { CiLinkedin } from "react-icons/ci";
-import { VscGithub } from "react-icons/vsc";
-import { MdAlternateEmail } from "react-icons/md";
+import Footer from "./footer.jsx";
 const AboutMeComponent = ({
   title,
   altText,
@@ -23,6 +21,7 @@ const AboutMeComponent = ({
           <br />
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

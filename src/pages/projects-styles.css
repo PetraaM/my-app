@@ -6,11 +6,10 @@
   display: grid;
   grid-auto-flow: row;
   gap: 20px; /* Adjust the gap between items */
-  background-color: rgba(255, 102, 196, 0.8);
-  margin-left: 10%;
-  margin-right: 10%;
+  justify-items: center;
+
   border-radius: 10px;
-  margin-top: 2%;
+
   justify-content: center; /* Center the content horizontally */
 }
 
@@ -20,20 +19,35 @@
   flex-direction: row;
   justify-content: center;
   align-items: center; /* Center the content vertically */
-  background-color: #d6d6d6;
-  width: 80%;
-  margin-left: 10%;
+  background-color: #242225;
+  width: 65%;
+
   margin-top: 3%;
+  border: 1px solid #ff66c4;
 }
-.first-project img {
-  margin-right: 10px; /* Adjust the margin right as needed */
+@media screen and (max-width: 1300px) {
+  .project-component {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column; /* Change direction to column */
+    width: 80%; /* Adjust width to fill container */
+  }
 }
-.second-project img {
-  margin-right: 10px; /* Adjust the margin right as needed */
-}
-.third-project img {
-  margin-right: 10px; /* Adjust the margin right as needed */
-}
+/* Default styles */
+.first-project img,
+.second-project img,
+.third-project img,
 .fourth-project img {
-  margin-right: 10px;
+  margin-right: 10px; /* Adjust the margin right as needed */
+}
+
+/* Media query for screen width greater than 580px */
+@media (max-width: 581px) {
+  .first-project img,
+  .second-project img,
+  .third-project img,
+  .fourth-project img {
+    width: 80px; /* Adjust the width as needed */
+  }
 }

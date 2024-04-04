@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="app-footer">
-      <h3 className="say-hello">say hello</h3>
+      <h3 className="say-hello">stay in touch</h3>
       <a
         href={`mailto:${emailAddress}`}
         className="email-icon"

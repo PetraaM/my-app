@@ -1,55 +1,60 @@
-/* Styling-aboutme.css */
-
 .about-me {
-  margin-top: 3vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  font-size: 2.4rem;
-}
-
-.about-me-title {
-  display: flex;
-  justify-content: center;
-  font-size: xx-large;
-  font-style: italic;
-  color: #3f4d34;
+  margin-top: 10.5vh; /* Reduce top margin */
+  margin-left: 1vh; /* Reduce left margin */
+  margin-right: 1vh; /* Reduce right margin */
+  font-size: 1.7rem; /* Reduce font size */
+  color: #d6d6d6;
 }
 
 .about-me-content {
   display: flex;
   flex-direction: row; /* Change to column for smaller layout */
   align-items: center; /* Center align content */
-  background-color: rgba(255, 102, 196, 0.8);
-  margin-left: 10%;
-  margin-right: 10%;
+  background-color: #242225;
+  margin-left: 5%; /* Reduce left margin */
+  margin-right: 5%; /* Reduce right margin */
   border-radius: 10px;
-  padding: 10px; /* Add padding as needed */
-  color: #3f4d34;
+  padding: 5px; /* Reduce padding */
+  margin-top: 10%;
+  font-size: 2.4rem;
 }
 
 .portrait-image {
   height: auto;
-  width: 40%; /* Adjust size of the image */
-  max-width: 200px; /* Limit maximum width */
+  width: 30%; /* Adjust size of the image */
+  max-width: 100px; /* Limit maximum width */
   border-radius: 10%;
-  margin-bottom: 5px; /* Add margin below image */
+  margin-bottom: 3px; /* Reduce margin below image */
 }
 
 .about-me-content p {
-  width: 60%;
-  font-size: 70%; /* Adjust font size */
+  width: 60%; /* Reduce width of paragraph */
+  font-size: 60%; /* Reduce font size */
   line-height: 1.5;
-  color: #000000;
-  padding: 5%;
+  color: #d6d6d6;
+  padding: 7%; /* Reduce padding */
   text-align: center; /* Center align text */
 }
 
-.contact-icons {
-  display: flex;
-  justify-content: center; /* Center align icons */
-  margin-top: auto; /* Push the icons to the bottom */
-}
+/* Media query for smaller screen widths */
+@media screen and (max-width: 1324px) {
+  .about-me-content {
+    flex-direction: column; /* Switch to column layout for smaller screens */
+    align-items: center; /* Center align content vertically */
+  }
 
-.contact-icons a {
-  margin: 0 10px; /* Add margin between icons */
+  .portrait-image {
+    width: 20%; /* Make image responsive */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+  }
+
+  .about-me-content p {
+    width: 100%; /* Make text full width within column layout */
+  }
+
+  @media screen and (max-width: 768px) {
+    .portrait-image {
+      width: 60%; /* Adjust image size for smoother transition */
+    }
+  }
 }

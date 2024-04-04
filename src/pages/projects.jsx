@@ -19,14 +19,14 @@ const Projects = () => {
           description="To Do App with Authentication, built using the PERN stack (PostgreSQL, Express.js, React.js, Node.js).
           This application empowers users to manage their tasks efficiently while ensuring their data remains secure with user authentication. First web page where I worked with backend and databases."
           link1={{
-            url: "https://plant-butlers.netlify.app/",
+            url: "https://to-do-app-pern.netlify.app/",
             text: "Live site",
           }}
           link2={{
             url: "https://github.com/PetraaM/Plant-butlers-complete-react-app",
             text: "GitHub",
           }}
-          className="first-project" // Add a class for the first project
+          className="first-project"
         />
         <ProjectComponent
           imageSrc={PlantButlers}
