@@ -33,7 +33,7 @@ const AboutMe = () => {
           <td>Agile methodology</td>
         </tr>
         <td className="newskills" colspan="10">
-          ...new skills loading...
+          ... new skills loading ...
         </td>
       </table>
     </>
