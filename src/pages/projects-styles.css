@@ -38,8 +38,9 @@
 .first-project img,
 .second-project img,
 .third-project img,
-.fourth-project img {
-  margin-right: 10px;
+.fourth-project img,
+.fifth-project img {
+  margin-right: 30px;
 }
 
 /* Media query for screen width greater than 580px */
@@ -47,9 +48,10 @@
   .first-project img,
   .second-project img,
   .third-project img,
-  .fourth-project img {
+  .fourth-project img,
+  .fifth-project img {
     max-width: 100%;
     max-width: 100%;
-    margin-left: 10px;
+    margin-left: 30px;
   }
 }

@@ -17,6 +17,7 @@ const AboutMe = () => {
       to learn more, I am the perfect person for you. I am hard working,
       motivated and determined.
       <br />
+      <br />
       Skills: HTML, CSS, JavaScript, React, Node.js, Figma, Agile methodology,
       User Interface design, User flows.
     </>

@@ -7,13 +7,26 @@ import FlappyIsland from "../assets/Flappy Island.png";
 import "./projects-styles.css";
 import Header from "../components/Header.jsx";
 import TaskZilla from "../assets/TaskZilla.png";
-
+import Ksss from "../assets/ksss.png";
 const Projects = () => {
   return (
     <>
       <Header className="projects-header" />
 
       <div className="projects-container">
+        <ProjectComponent
+          imageSrc={Ksss}
+          description="Ksss is the first website where our small team worked with a real client: Royal Swedish Sailing Club. They have an amazing historical collection which was gathered thru years and they wanted a separate website with a historical timeline to show it off. We used React, Next.js and Sanity CMS."
+          link1={{
+            url: "https://ksss-history-site.vercel.app/",
+            text: "Live site",
+          }}
+          link2={{
+            url: "https://github.com/ksss-github/ksss-history-site",
+            text: "GitHub",
+          }}
+          className="first-project"
+        />
         <ProjectComponent
           imageSrc={TaskZilla}
           description="To Do App with Authentication, built using the PERN stack (PostgreSQL, Express.js, React.js, Node.js).
@@ -26,7 +39,7 @@ const Projects = () => {
             url: "https://github.com/PetraaM/Plant-butlers-complete-react-app",
             text: "GitHub",
           }}
-          className="first-project"
+          className="second-project"
         />
         <ProjectComponent
           imageSrc={PlantButlers}
@@ -39,7 +52,7 @@ const Projects = () => {
             url: "https://github.com/PetraaM/Plant-butlers-complete-react-app",
             text: "GitHub",
           }}
-          className="second-project"
+          className="third-project"
         />
         <ProjectComponent
           imageSrc={PacMan}
@@ -52,7 +65,7 @@ const Projects = () => {
             url: "https://github.com/PetraaM/pacman",
             text: "GitHub",
           }}
-          className="third-project" // Add a class for the second project
+          className="fourth-project" // Add a class for the second project
         />
         <ProjectComponent
           imageSrc={FlappyIsland}
@@ -68,7 +81,7 @@ const Projects = () => {
             url: "https://github.com/PetraaM/Flappy-Island-game",
             text: "GitHub",
           }}
-          className="fourth-project" // Add a class for the third project
+          className="fifth-project" // Add a class for the third project
         />
       </div>
     </>
