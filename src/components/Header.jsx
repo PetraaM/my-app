@@ -13,7 +13,7 @@ const Header = () => {
           location.pathname === "/" ? "active" : ""
         }`}
       >
-        petra.m
+        petra m.
       </Link>
       <Link
         to="/about"

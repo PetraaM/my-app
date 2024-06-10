@@ -1,5 +1,4 @@
 .about-me {
-  margin-top: 10.5vh; /* Reduce top margin */
   margin-left: 1vh; /* Reduce left margin */
   margin-right: 1vh; /* Reduce right margin */
   font-size: 1.7rem; /* Reduce font size */
@@ -15,7 +14,6 @@
   margin-right: 5%; /* Reduce right margin */
   border-radius: 10px;
   padding: 5px; /* Reduce padding */
-  margin-top: 10%;
   font-size: 2.4rem;
 }
 
@@ -56,5 +54,85 @@
     .portrait-image {
       width: 60%; /* Adjust image size for smoother transition */
     }
+  }
+}
+
+td {
+  padding: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: large;
+  border: 1px solid #ff66c4;
+  border-radius: 15%;
+}
+table {
+  border-spacing: 10px;
+}
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling */
+}
+
+table {
+  border-spacing: 10px;
+  width: 100%;
+  border-collapse: separate; /* Ensure borders are separated for individual styling */
+}
+
+td {
+  padding: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: large;
+  border: 2px solid #ff66c4;
+  border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+  td {
+    font-size: medium;
+    padding: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .newskills {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  td {
+    font-size: small;
+    padding: 1px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .table-responsive {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  table {
+    border-spacing: 5px;
+  }
+  .newskills {
+    font-size: small;
+  }
+}
+.newskills {
+  text-align: center;
+  font-size: large;
+  padding: 10px;
+  animation: fade 1.5s infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
