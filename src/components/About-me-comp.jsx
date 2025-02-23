@@ -1,8 +1,8 @@
 // AboutMeComponent.jsx
 import React from "react";
 import "./Styling-aboutme.css";
-import PetraCollage from "../assets/Petra-collage.png";
 import Footer from "./footer.jsx";
+
 const AboutMeComponent = ({
   title,
   altText,
@@ -14,7 +14,13 @@ const AboutMeComponent = ({
   return (
     <div className="about-me">
       <div className="about-me-content">
-        <img src={PetraCollage} alt={altText} className="portrait-image" />
+        <div className="creative-heading">
+          <span className="big-why">WHY</span>
+          <div className="heading-text">
+            <span>YOU SHOULD HIRE ME AS YOUR</span>
+            <span className="highlight">FRONTEND DEVELOPER</span>
+          </div>
+        </div>
         <p>
           {description}
           <br />

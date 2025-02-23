@@ -19,7 +19,6 @@
   align-items: center;
   justify-content: flex-end;
   font-size: calc(15px + 3vmin);
-  margin-left: 1%;
   position: sticky;
   top: 0;
   background-color: #242225;
@@ -90,5 +89,44 @@
 
   .App-header {
     justify-content: center;
+  }
+}
+/* Base transition for smooth hover effects */
+.Header-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Underline hover effect */
+.Header-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff66c4;
+  transition: width 0.3s ease;
+}
+
+.Header-link:hover::after {
+  width: 100%;
+}
+
+/* Hover color and movement */
+.Header-link:hover {
+  color: #ff66c4;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 450px) {
+  .App-header {
+    justify-content: space-around; /* Creates equal space between items */
+    font-size: calc(12px + 1vmin); /* Smaller font size */
+  }
+
+  .Header-link,
+  .Header-link-main {
+    margin-right: 10px; /* Remove the existing margins */
   }
 }

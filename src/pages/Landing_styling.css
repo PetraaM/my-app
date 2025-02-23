@@ -1,12 +1,9 @@
 .App {
-  /*height: 100vh; 
-  width: 100vw; */
   color: #d6d6d6;
   background-repeat: no-repeat;
-  /*background-color: #c280a1;*/
   position: relative;
   z-index: 0;
-
+  min-height: 100vh;
   text-decoration: none;
 }
 
@@ -31,6 +28,7 @@
   position: relative;
   z-index: 1;
   animation: fallIn 1.5s ease-out;
+  gap: 5%; /* Added for consistent spacing */
 }
 
 .portrait-image {
@@ -41,40 +39,20 @@
   min-height: 200px;
   display: flex;
   flex-direction: column;
+  object-fit: contain; /* Added for better image handling */
 }
+
 .intro-greeting {
   width: 45%;
-  min-width: 280px; /* Adjust minimum width as needed */
+  min-width: 280px;
   height: auto;
   max-height: 90%;
-  min-height: 200px; /* Adjust minimum height as needed */
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+  object-fit: contain; /* Added for better image handling */
 }
 
-/* Media query for smaller screen sizes */
-@media (max-width: 768px) {
-  .portrait-image,
-  .intro-greeting {
-    width: 90%; /* Adjust the width for smaller screens */
-    min-width: 200px; /* Adjust minimum width as needed */
-    max-height: 70%; /* Adjust maximum height as needed */
-    min-height: 150px; /* Adjust minimum height as needed */
-  }
-}
-
-/* Media query for even smaller screen sizes */
-@media (max-width: 480px) {
-  .portrait-image,
-  .intro-greeting {
-    width: 100%; /* Adjust the width for even smaller screens */
-    min-width: 150px; /* Adjust minimum width as needed */
-    max-height: 50%; /* Adjust maximum height as needed */
-    min-height: 100px; /* Adjust minimum height as needed */
-  }
-}
-
-/* Keyframes for the new animation */
 @keyframes fallIn {
   from {
     transform: translateY(-100%);
@@ -86,23 +64,49 @@
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 320px) {
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
   .Intro {
-    height: 100%;
-    width: 100%;
-    flex-direction: column-reverse; /* Switch to column layout for smaller screens */
+    height: auto;
+    width: 95%;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 20px 0;
   }
 
-  .portrait-image {
-    height: auto;
-    width: auto;
-    max-width: 85%; /* Set maximum width for column layout */
-    max-height: 85%;
-  }
+  .portrait-image,
   .intro-greeting {
-    height: 65%;
-    width: 50%;
-    max-width: 85%; /* Set maximum width for column layout */
-    max-height: 85%;
+    width: 85%;
+    min-width: unset; /* Remove fixed min-width */
+    max-height: 50vh;
+    min-height: unset; /* Remove fixed min-height */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .Intro {
+    width: 100%;
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .portrait-image,
+  .intro-greeting {
+    width: 95%;
+    max-height: 45vh;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 320px) {
+  .Intro {
+    gap: 15px;
+  }
+
+  .portrait-image,
+  .intro-greeting {
+    width: 100%;
+    max-height: 40vh;
   }
 }
